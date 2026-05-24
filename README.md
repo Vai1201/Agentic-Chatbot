@@ -32,9 +32,11 @@ The application is designed with a modular architecture, making it scalable, reu
 - Groq LLM
 
 ## Run Locally
+```
 conda activate agenticai
 pip install -r requirements.txt
 streamlit run app.py
+```
 
 
 ## Author
