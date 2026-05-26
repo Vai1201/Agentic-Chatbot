@@ -4,6 +4,10 @@ An AI-powered conversational chatbot application built using Streamlit, LangGrap
 
 The application is designed with a modular and scalable architecture, allowing seamless integration of advanced AI capabilities such as Retrieval-Augmented Generation (RAG), vector databases, tool integrations, and agentic workflows.
 
+Streamlit live link for the app - https://agentic-chatbot-fm7xrnrakxiv2fhyssnhvg.streamlit.app/
+
+make sure to use your own API's
+
 ## Features
 
 - Interactive chatbot interface using Streamlit
@@ -39,9 +43,11 @@ The application is designed with a modular and scalable architecture, allowing s
 - Retrieval-Augmented Generation (RAG)
 
 ## Run Locally
+```
 conda activate agenticai
 pip install -r requirements.txt
 streamlit run app.py
+```
 
 
 ## Author
