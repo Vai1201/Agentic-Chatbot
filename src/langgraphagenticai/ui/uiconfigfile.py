@@ -6,7 +6,7 @@ class Config:
         self.config.read(config_file)
 
     def get_page_title(self):
-        return self.config['DEFAULT'].get('PAGE_TITLE', '🤖 LangGraph: Stateful Agentic AI for News, Chatbot, and Blog Generator')
+        return self.config['DEFAULT'].get('PAGE_TITLE', '🤖 LangGraph: Stateful Agentic AI for News, Chatbot, and Blog Generation')
 
     def get_llm_options(self):
         options = self.config['DEFAULT'].get('LLM_OPTIONS', 'Groq')
