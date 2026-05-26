@@ -20,7 +20,7 @@ class DisplayResultStreamlit:
     def display_result_on_ui(self):
         human_message = self._get_human_message()
 
-        if self.usecase == "Basic Chatbot":
+        if self.usecase == "Chatbot":
 
             with st.chat_message("user"):
                 st.write(human_message.content)
@@ -39,7 +39,7 @@ class DisplayResultStreamlit:
                             with st.chat_message("assistant"):
                                 st.write(message.content)
 
-        elif self.usecase == "Chatbot with Tool":
+        elif self.usecase == "Chatbot with Tavily":
 
             initial_state = {
                 "messages": [human_message]

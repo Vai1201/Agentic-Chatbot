@@ -7,13 +7,13 @@ from src.langgraphagenticai.nodes.chatbot_with_tool_node import ChatbotWithToolN
 from src.langgraphagenticai.nodes.ai_news_node import AINewsNode
 
 class GraphBuilder:
-    def __init__(self, model):
+    def __init__(self, mode,l):
         self.llm=model
         self.graph_builder=StateGraph(State)
 
     def basic_chatbot_build_graph(self):
         """
-        Build a basic chatbot graph using Langgraph.
+        Build a chatbot graph using Langgraph.
         This method initiliazes a chatbot node using the BasicChatbotNode class and integrates it into the graph.
         The chatbot node is set as both the entry and exit point of the graph, allowing for a simple conversational flow.
         """
@@ -76,10 +76,10 @@ class GraphBuilder:
         This method checks the selected use case and calls the corresponding graph building method to construct the graph accordingly.
         If an unsupported use case is selected, it raises a ValueError to inform the user.
         """
-        if usecase=="Basic Chatbot":
+        if usecase=="Chatbot":
             self.basic_chatbot_build_graph()
 
-        elif usecase=="Chatbot with Tool":
+        elif usecase=="Chatbot with Tavily":
             self.chatbot_with_tools_build_graph()
 
         elif usecase=="AI News":

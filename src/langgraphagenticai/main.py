@@ -3,11 +3,7 @@ from src.langgraphagenticai.ui.streamlitui.loadui import LoadStreamlitUI
 from src.langgraphagenticai.LLMS.groqllm import GroqLLM
 from src.langgraphagenticai.graph.graph_builder import GraphBuilder
 from src.langgraphagenticai.ui.streamlitui.display_result import DisplayResultStreamlit
-import sys
-import os
-ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "."))
-sys.path.append(ROOT_DIR)
-sys.path.append(os.path.join(ROOT_DIR, "src"))
+
 
 def load_langgraph_agentic_app():
 

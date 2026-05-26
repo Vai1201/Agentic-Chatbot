@@ -2,7 +2,7 @@ from src.langgraphagenticai.state.state import State
 
 class BasicChatbotNode:
     """
-    A basic chatbot node for a conversational agent graph.
+    A chatbot node for a conversational agent graph.
     """
 
     def __init__(self, model):

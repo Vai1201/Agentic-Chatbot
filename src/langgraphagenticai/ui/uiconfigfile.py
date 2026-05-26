@@ -6,14 +6,14 @@ class Config:
         self.config.read(config_file)
 
     def get_page_title(self):
-        return self.config['DEFAULT'].get('PAGE_TITLE', 'LangGraph: Build Stateful Agentic AI Graph')
+        return self.config['DEFAULT'].get('PAGE_TITLE', '🤖 LangGraph: Stateful Agentic AI for News, Chatbot, and Blog Generator')
 
     def get_llm_options(self):
         options = self.config['DEFAULT'].get('LLM_OPTIONS', 'Groq')
         return [option.strip() for option in options.split(',')]
 
     def get_usecase_options(self):
-        options = self.config['DEFAULT'].get('USECASE_OPTIONS', 'Basic Chatbot, Chatbot with Tool, AI News, Blog Generator')
+        options = self.config['DEFAULT'].get('USECASE_OPTIONS', 'Chatbot, Chatbot with Tavily, AI News, Blog Generator')
         return [option.strip() for option in options.split(',')]
 
     def get_groq_model_options(self):
